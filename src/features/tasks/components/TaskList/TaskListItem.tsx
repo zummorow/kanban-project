@@ -3,7 +3,7 @@ import type { Task, CSSProperties } from '../../../../types'
 import {
     TASK_PROGRESS_STATUS,
     TASK_PROGRESS_ID,
-  } from '../../../../constants/app'
+  } from '../../../../constans/app'
 
 interface TaskListItemProps {
   task: Task
