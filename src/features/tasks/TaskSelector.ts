@@ -4,7 +4,7 @@ import type { Task } from '../../types'
 import {SelectorKeys} from '../../constans/recoilKeys'
 
 export const uncompletedTasksSelector = selector<Task[]>({
-  SelectorKeys.UNCOMPLETED_TASKS,
+  key: SelectorKeys.UNCOMPLETED_TASKS,
   get: ({ get }) => {
     return get(tasksState).filter((task) => {
       return task.progressOrder !== 4
